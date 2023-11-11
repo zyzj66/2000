@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<头>
-    <meta charset =“utf-8”名称=“viewport”内容=“widthdevice-width，initial-scale = 0.4，maximum-scale = 1，user-scalable = yes”>
+<head>
+    <meta charset="utf-8" name="viewport" content="widthdevice-width, initial-scale=0.4, maximum-scale=1, user-scalable=yes">
  
-    <style>body {background-image: url("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsafe-img.xhscdn.com%2Fbw1%2F3d901398-5fff-4b1b-9b39- e8d37d9ac62c%3FimageView2%2F2%2Fw%2F1080%2Fformat%2Fjpg&refer=http%3A%2F%2Fsafe-img.xhscdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1701491601&t= bdbe06da4f1edff37fd879a0fbc60ead"); }</风格>
+    <style>body {background-image: url("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsafe-img.xhscdn.com%2Fbw1%2F3d901398-5fff-4b1b-9b39-e8d37d9ac62c%3FimageView2%2F2%2Fw%2F1080%2Fformat%2Fjpg&refer=http%3A%2F%2Fsafe-img.xhscdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1701491601&t=bdbe06da4f1edff37fd879a0fbc60ead");}</style>
     <audio src="http://52bsj.vip:81/api/v3/file/get/172981/%E7%BE%A1%E6%85%95%E9%A3%8E%E7%BE%A1%E6%85%95%E9%9B%A8-%E6%80%AA%E9%98%BF%E5%A7%A8-295139495.mp3?sign=F_0zhGksfwaolvx0vys531EgTVxdcdzk98N-E4zzhpA%3D%3A0" autoplay></audio>
     <style>
         body {
@@ -25,14 +25,14 @@
  
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function(position) {
-                show_it(position.coords.latitude,position.coords.longitude);
+                show_it(position.coords.latitude, position.coords.longitude);
             },
-            函数（错误）{
-                getElement('geo_loc').innerHTML = err.code + "|" + 错误消息；
+            function(err) {
+                getElement('geo_loc').innerHTML = err.code + "|" + err.message;
             });
-        } 别的 {
+        } else {
             getElement('geo_loc').innerHTML = ".";
         }
-    </脚本>
-</正文>
+    </script>
+</body>
 </html>
